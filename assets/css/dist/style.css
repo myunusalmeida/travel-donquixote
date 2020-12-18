@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E7E7E7;
+  overflow-x: hidden;
+}
+
+body,
+a {
+  font-family: "poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 999;
+}
+header.sticky {
+  background-color: #1F4AA8;
+}
+@media (max-width: 767px) {
+  header.sticky .navbar {
+    padding: 10px 20px;
+  }
+}
+header .navbar {
+  padding: 20px 0;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  header .navbar {
+    padding: 20px;
+  }
+}
+header .navbar .navbar-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-brand {
+    font-size: 16px;
+  }
+}
+header .navbar .navbar-brand img {
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  header .navbar .navbar-brand img {
+    width: 20px;
+    height: 20px;
+  }
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header .navbar .social-media {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+header .navbar .social-media .btn-social-media {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 7px;
+  margin: 0 4px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+header .navbar .social-media .btn-social-media:hover {
+  text-decoration: none;
+  background-color: #1F4AA8;
+  border-color: #1F4AA8;
+}
+
+.banner-section {
+  background-image: url(../img/img2.jpg);
+  background-size: cover;
+  padding-left: 120px;
+  padding-right: 0;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .banner-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.banner-section .content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .banner-section .content {
+    margin-top: 50px;
+  }
+}
+.banner-section .content .banner-title-section .subtitle {
+  color: #075069;
+  font-weight: 600;
+}
+.banner-section .content .banner-title-section .title {
+  color: #075069;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .banner-section .content .banner-title-section .title {
+    font-size: 40px;
+  }
+}
+.banner-section .content .banner-title-section .description {
+  color: #d3d3d3;
+}
+.banner-section .content .banner-title-section .btn-banner {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #1F4AA8;
+  box-shadow: 46px 176px rgba(7, 80, 105, 0.07), 0px 26.4449px 83.6654px rgba(7, 80, 105, 0.0503198), 0px 21.7678px 58.4727px rgba(7, 80, 105, 0.0417275), 0px 18.0501px 42.8789px rgba(7, 80, 105, 0.035), 0px 13.4004px 29.0035px rgba(7, 80, 105, 0.0282725), 0px 7.40288px 14.9097px rgba(7, 80, 105, 0.0196802);
+}
+.banner-section .content .swiper-container {
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .banner-section .content .swiper-container {
+    width: 105%;
+    height: 100% !important;
+    margin-right: -20px;
+  }
+}
+.banner-section .content .swiper-container .swiper-slide {
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center center;
+  width: 28%;
+  border-radius: 20px;
+  box-shadow: 46px 176px rgba(7, 80, 105, 0.07), 0px 26.4449px 83.6654px rgba(7, 80, 105, 0.0503198), 0px 21.7678px 58.4727px rgba(7, 80, 105, 0.0417275), 0px 18.0501px 42.8789px rgba(7, 80, 105, 0.035), 0px 13.4004px 29.0035px rgba(7, 80, 105, 0.0282725), 0px 7.40288px 14.9097px rgba(7, 80, 105, 0.0196802);
+  transition: 0.5s;
+}
+.banner-section .content .swiper-container .swiper-slide:hover {
+  transform: translateY(-10px);
+}
+@media (max-width: 991px) {
+  .banner-section .content .swiper-container .swiper-slide {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section .content .swiper-container .swiper-slide {
+    width: 60%;
+    padding-top: 200px;
+  }
+}
+.banner-section .content .swiper-container .swiper-slide .title {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
